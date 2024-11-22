@@ -1,11 +1,9 @@
 name: Echo From GH
 
-on:
-  workflow_call:
-    inputs:
+on: workflow_call
       
 jobs:
   echo-gh:
-    runs-on: host-docker-ubuntu20.04
+    runs-on: ubuntu-latest
     steps:
       - run: echo '🦖🦖🦖🦖🦖🦖 FROM CALLED WORKFLOW 🦖🦖🦖🦖🦖🦖'
